@@ -13,8 +13,6 @@ from datetime import datetime
 
 from fastapi import APIRouter
 
-from app.core.config import settings
-
 # TODO 1: APIRouter 인스턴스 생성
 router = APIRouter()
 
@@ -24,6 +22,7 @@ router = APIRouter()
 async def health_check() -> dict:
     return {
         "status": "healthy",
+        "service": "lumi-agent",
         "timestamp": datetime.utcnow().isoformat(),
         "version": "0.5.0",
     }
