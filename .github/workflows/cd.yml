@@ -1,4 +1,5 @@
 # Lumi Agent CD 워크플로우 (GHCR + Compute Engine 배포)
+# (재배포 트리거용 주석)
 #
 # 이 워크플로우는 CI(Lumi Agent CI)가 main 브랜치에서 성공한 뒤 실행됩니다.
 # GitHub Actions에서 Docker 이미지를 빌드하고 GHCR에 Push한 후,
